@@ -1,0 +1,13 @@
+runtime: python27
+api_version: 1
+  login: admin
+  script: main.app
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+- name: PIL
+  version: latest
